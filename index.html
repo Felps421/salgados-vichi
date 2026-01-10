@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salgados Vichi - Encomendas por WhatsApp</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Fixo -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://customer-assets.emergentagent.com/job_tastyvichi/artifacts/vvlengy0_foto%20logo.jpeg"
+                        alt="Salgados Vichi Logo">
+                </div>
+
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <a href="https://wa.me/5512992279130?text=Olá,%20gostaria%20de%20fazer%20uma%20encomenda!"
+                    class="btn-whatsapp-header" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                            fill="white" />
+                    </svg>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Hambúrguer -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <button type="button" class="menu-close" id="menuClose" aria-label="Fechar menu" title="Fechar menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true" focusable="false">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="#FF69B4" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+
+            <ul class="menu-items">
+                <li><a href="#assados" class="menu-item">🔥 Salgados Assados</a></li>
+                <li><a href="#paes" class="menu-item">🥐 Pão Semi Folhados</a></li>
+                <li><a href="#pizzas" class="menu-item">🍕 Pizzas</a></li>
+                <li><a href="#outros" class="menu-item">🎂 Outros Produtos</a></li>
+                <li><a href="#contato" class="menu-item">📱 Contato / WhatsApp</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Salgados e Doces Vichi</h1>
+                <p class="hero-subtitle">Sabor e qualidade em cada mordida</p>
+                <p class="hero-description">Encomendas especiais para suas festas e eventos</p>
+                <a href="https://wa.me/5512992279130?text=Olá,%20gostaria%20de%20fazer%20uma%20encomenda!"
+                    class="btn-primary" target="_blank" rel="noopener noreferrer">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                            fill="white" />
+                    </svg>
+                    Fazer Encomenda
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Salgados Assados -->
+    <section id="assados" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Salgados Assados</h2>
+            <p class="section-subtitle">Deliciosos salgados assados para sua festa</p>
+
+            <div class="products-grid">
+                <!-- Esfirras -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <!-- SUBSTITUA esta URL pela foto real da esfirra -->
+                        <img src="images/esfirra.jpeg" alt="Esfirra">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Esfirra</h3>
+                        <p class="product-description">Sabores: Carne | Frango | Calabresa | Calafrango | Brócolis c/
+                            Bacon</p>
+                        <p class="product-price">Consulte valores</p>
+                        <p class="product-minimum">Pedido mínimo: 20 unidades</p>
+                        <a href="https://wa.me/5512992279130?text=Olá,tenho interesse em esfirras" class="btn-secondary"
+                            target="_blank" rel="noopener noreferrer">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Enroladinhos -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <!-- SUBSTITUA esta URL pela foto real do enroladinho -->
+                        <img src="https://img.saborosos.com.br/imagens/enroladinho-de-salsicha.jpg" alt="Enroladinho">
+
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Enroladinho</h3>
+                        <p class="product-description">Sabores: Salsicha | Presunto e Queijo</p>
+                        <p class="product-price">Consulte valores</p>
+                        <p class="product-minimum">Pedido mínimo: 20 unidades</p>
+                        <a href="https://wa.me/5512992279130?text=Olá,tenho interesse em enroladinhos"
+                            class="btn-secondary" target="_blank" rel="noopener noreferrer">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pastel Assado -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <!-- SUBSTITUA esta URL pela foto real do pastel assado -->
+                        <img src="images/pastel.jpeg" alt="Pastel Assado">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Pastel Assado</h3>
+                        <p class="product-description">Sabores: Carne | Frango | Calafrango | Frango c/ Brócolis |
+                            Calabresa c/ Queijo</p>
+                        <p class="product-price">Consulte valores</p>
+                        <p class="product-minimum">Pedido mínimo: 20 unidades</p>
+                        <a href="https://wa.me/5512992279130?text=Olá,tenho interesse em pastéis assados"
+                            class="btn-secondary" target="_blank" rel="noopener noreferrer">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Empadas -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <!-- SUBSTITUA esta URL pela foto real da empada -->
+                        <img src="images/empadas.jpeg" alt="Empada">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Empada</h3>
+                        <p class="product-description">Sabores: Palmito | Frango Torta | Frango | Calafrango | Frango c/
+                            Palmito | Frango c/ Brócolis</p>
+                        <p class="product-price">Consulte valores</p>
+                        <p class="product-minimum">Pedido mínimo: 20 unidades</p>
+                        <a href="https://wa.me/5512992279130?text=Olá,tenho interesse em empadas" class="btn-secondary"
+                            target="_blank" rel="noopener noreferrer">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Pão Semi Folhados -->
+    <section id="paes" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Pão Semi Folhados</h2>
+            <p class="section-subtitle">Pães deliciosos e crocantes para todas as ocasiões</p>
+
+            <div class="products-grid">
+                <!-- Pão Semi Folhado Salgado -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <!-- SUBSTITUA esta URL pela foto real do pão semi folhado -->
+                        <img src="images/paosalgado.jpeg" alt="Pão Semi Folhado">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Pão Semi Folhado - Salgados</h3>
+                        <p class="product-description">Sabores: Frango c/ Catupiry | Frango c/ Palmito | Frango c/
+                            Brócolis | Calabresa | Calafrango | Frango c/ Bacon | Queijo e Presunto</p>
+                       <p class="product-price">Consulte valores</p>
+                        <p class="product-minimum">Pedido mínimo: 1 unidade</p>
+                        <a href="https://wa.me/5512992279130?text=Olá,tenho interesse em pão semi folhado salgado"
+                            class="btn-secondary" target="_blank" rel="noopener noreferrer">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Pão Semi Folhado Doce -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <!-- SUBSTITUA esta URL pela foto real do pão doce -->
+                        <img src="images/pao.png.jpeg" alt="Pão Semi Folhado Doce">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Pão Semi Folhado - Doces</h3>
+                        <p class="product-description">Sabores: Doce de Leite | Banana</p>
+                        <p class="product-price">Consulte valores</p>
+                        <p class="product-minimum">Pedido mínimo: 1 unidade</p>
+                        <a href="https://wa.me/5512992279130?text=Olá, tenho interesse em pão semi folhado doce"
+                            class="btn-secondary" target="_blank" rel="noopener noreferrer">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Outros Produtos -->
+    <section id="outros" class="products-section bg-light">
+        <div class="container">
+            <h2 class="section-title">Outros Produtos</h2>
+            <p class="section-subtitle">Delícias especiais da casa</p>
+
+            <div class="products-grid">
+                <!-- Bolinho Caipira -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <!-- SUBSTITUA esta URL pela foto real do bolinho caipira -->
+                        <img src="images/bolinho.jpeg" alt="Bolinho Caipira">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Bolinho Caipira</h3>
+                        <p class="product-description">Delicioso bolinho caipira tradicional, sequinho e saboroso</p>
+                        <p class="product-price">Consulte valores</p>
+                        <p class="product-minimum">Disponível para encomenda</p>
+                        <a href="https://wa.me/5512992279130?text=Olá,%20tenho%20interesse%20em%20bolinho%20caipira"
+                            class="btn-secondary" target="_blank" rel="noopener noreferrer">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <!-- Bolo Salgado -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <!-- SUBSTITUA esta URL pela foto real do bolinho caipira -->
+                        <img src="images/bolosalgado.jpeg" alt="Bolo Salgado">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Bolo Salgado</h3>
+                        <p class="product-description">Delicioso bolo Salgado tradicional e saboroso</p>
+                        <p class="product-price">Consulte valores</p>
+                        <p class="product-minimum">Disponível para encomenda</p>
+                        <a href="https://wa.me/5512992279130?text=Olá, tenho interesse em bolo salgado"
+                            class="btn-secondary" target="_blank" rel="noopener noreferrer">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <!-- Pães de Batata Recheado -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <!-- SUBSTITUA esta URL pela foto real dos pães de batata -->
+                        <img src="images/paobatata.jpeg" alt="Pães de Batata Recheado">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Pães de Batata Recheado</h3>
+                        <p class="product-description">Pães de batata recheados, macios e irresistíveis</p>
+                        <p class="product-price">Consulte valores</p>
+                        <p class="product-minimum">Disponível para encomenda</p>
+                        <a href="https://wa.me/5512992279130?text=Olá, tenho interesse em pães de batata recheado"
+                            class="btn-secondary" target="_blank" rel="noopener noreferrer">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Seção: Pizzas -->
+    <section id="pizzas" class="products-section">
+        <div class="container">
+            <h2 class="section-title">Pizzas</h2>
+            <p class="section-subtitle">Pizza enrolada e mini pizzas deliciosas</p>
+
+            <div class="products-grid">
+                <!-- Pizza Enrolada -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <!-- SUBSTITUA esta URL pela foto real da pizza enrolada -->
+                        <img src="images/pizza-enrolada-de-calabresa-44535.jpg"
+                            alt="Pizza Enrolada">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Pizza Enrolada</h3>
+                        <p class="product-description">Sabores: Queijo e Presunto | Calabresa | Calafrango | Frango c/
+                            Catupiry</p>
+                       <p class="product-price">Consulte valores</p>
+                        <p class="product-minimum">Pedido mínimo: 1 unidade</p>
+                        <a href="https://wa.me/5512992279130?text=Olá, tenho interesse em pizza enrolada"
+                            class="btn-secondary" target="_blank" rel="noopener noreferrer">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mini Pizza -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <!-- SUBSTITUA esta URL pela foto real da mini pizza -->
+                        <img src="images/minipizza.jpeg" alt="Mini Pizza">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Mini Pizza</h3>
+                        <p class="product-description">Salgadas: Calafrango | Queijo e Presunto | Calabresa | Dois
+                            Queijos | Brócolis c/ Bacon | Frango c/ Catupiry</p>
+                        <p class="product-description">Doces: Brigadeiro | Beijinho</p>
+                        <p class="product-price">Consulte valores</p>
+                        <p class="product-minimum">Pedido mínimo: 20 unidades</p>
+                        <a href="https://wa.me/5512992279130?text=Olá, tenho interesse em mini pizzas"
+                            class="btn-secondary" target="_blank" rel="noopener noreferrer">
+                            Pedir pelo WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contato" class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Faça sua encomenda falando direto com a Salgados Vichi</h2>
+                <p class="cta-subtitle">Atendemos por encomenda com todo carinho e dedicação</p>
+                <a href="https://wa.me/5512992279130?text=Olá,%20gostaria%20de%20fazer%20uma%20encomenda!"
+                    class="btn-cta" target="_blank" rel="noopener noreferrer">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                            fill="#FF69B4" />
+                    </svg>
+                    Chamar no WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://customer-assets.emergentagent.com/job_tastyvichi/artifacts/vvlengy0_foto%20logo.jpeg"
+                        alt="Salgados Vichi Logo">
+                </div>
+                <div class="footer-info">
+                    <h3>Salgados e Doces Vichi</h3>
+                    <p>Atendemos por encomenda</p>
+                    <p class="footer-phone">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                                fill="#FF69B4" />
+                        </svg>
+
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Salgados e Doces Vichi. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/5512992279130?text=Olá,%20gostaria%20de%20fazer%20uma%20encomenda!" class="whatsapp-float"
+        target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                fill="white" />
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
